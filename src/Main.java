@@ -1,22 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        Lutador l[] = new Lutador[6];
-        l[0] = new Lutador ("Anderson Silva", "Brasil", 35,
-                1.80f, 76.9f, 6, 0, 15 );
-        l[1] = new Lutador("Lyoto", "Japão", 45, 1.89f,
-            93.4f, 0, 0, 16);
-         l[2] = new Lutador("Matheus", "Países Baixos", 29,
-            1.77f, 126.2f, 1, 0, 17);
-        l[3] = new Lutador("Pedro", "França", 56,
-                1.63f, 126.2f, 4, 3, 10);
-        l[4] = new Lutador("Shogun", "Noruega", 47,
-                1.84f, 89.3f, 1, 0, 4);
-        l[5] = new Lutador("Marcos", "China", 19,
-                1.58f, 76.9f, 1, 0, 14);
+    Pessoa[] p = new Pessoa[3]; //Criação de Vetor para 3 vetores.
+    Livro[] l = new Livro[3];
 
-        Luta UFC = new Luta();
-        UFC.marcarLuta(l[1], l[1]);
-        UFC.lutar();
+    p[0] = new Pessoa("Matheus", 26, "Masculino");
+    p[1] = new Pessoa("Carl", 56, "Masculino");
+    p[2] = new Pessoa("Juliana", 25, "Feminino");
 
+    l[0] = new Livro("Dune","Frank Hebert",286,false, p[0]);
+    l[1] = new Livro("A Criada", "Frida", 321, true, p[1]);
+    l[2] = new Livro("A luta", "Michael Jackson", 456, true, p[2]);
+
+
+        l[0].abir();
+        l[0].folhear(700);
+        l[0].avancarPag();
+        System.out.println(l[0].detalhes());
+        l[0].avancarPag();
     }
 }
