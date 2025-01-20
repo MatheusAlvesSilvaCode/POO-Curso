@@ -1,21 +1,28 @@
 public class Main {
     public static void main(String[] args) {
-    Pessoa[] p = new Pessoa[3]; //Criação de Vetor para 3 vetores.
-    Livro[] l = new Livro[3];
+    ProjetoPessoas p1 = new ProjetoPessoas();
+    Aluno p2 = new Aluno();
+    Professor p3 = new Professor();
+    funcionario p4 = new funcionario();
 
-    p[0] = new Pessoa("Matheus", 26, "Masculino");
-    p[1] = new Pessoa("Carl", 56, "Masculino");
-    p[2] = new Pessoa("Juliana", 25, "Feminino");
+    p1.setNome("Matheus");
+        p2.setNome("Alves");
+        p3.setNome("Silva");
+        p4.setNome("Carlos");
 
-    l[0] = new Livro("Dune","Frank Hebert",286,false, p[0]);
-    l[1] = new Livro("A Criada", "Frida", 321, true, p[1]);
-    l[2] = new Livro("A luta", "Michael Jackson", 456, true, p[2]);
+        p1.setSexo("Masculino");
+        p2.setSexo("Feminino");
 
+        p3.receberaumento(700f);
 
-        l[0].abir();
-        l[0].folhear(700);
-        l[0].avancarPag();
-        System.out.println(l[0].detalhes());
-        l[0].avancarPag();
+        p1.FazerAniversario();
+        p2.FazerAniversario();
+        p3.FazerAniversario();
+
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
+
     }
 }
