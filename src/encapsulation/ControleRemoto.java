@@ -1,4 +1,4 @@
-import java.awt.event.ActionListener;
+package encapsulation;
 
 public class ControleRemoto implements Controlador {
     private int volume;

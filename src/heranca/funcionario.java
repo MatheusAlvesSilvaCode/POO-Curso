@@ -1,4 +1,6 @@
-public class funcionario extends ProjetoPessoas{
+package heranca;
+
+public class funcionario extends ProjetoPessoas {
     private String setor;
     private boolean trabalhando;
 

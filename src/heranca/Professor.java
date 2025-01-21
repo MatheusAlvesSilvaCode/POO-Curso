@@ -1,3 +1,5 @@
+package heranca;
+
 public class Professor extends ProjetoPessoas {
     private String especialidade;
     private float salario;

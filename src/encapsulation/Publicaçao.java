@@ -1,3 +1,5 @@
+package encapsulation;
+
 public interface Publicaçao {
     public void abir ();
     public void fechar ();

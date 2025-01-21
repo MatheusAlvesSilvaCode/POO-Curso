@@ -1,3 +1,5 @@
+package heranca;
+
 public class Aluno extends ProjetoPessoas {
     private int mat;
     private String curso;

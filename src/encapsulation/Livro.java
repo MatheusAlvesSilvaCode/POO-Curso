@@ -1,3 +1,7 @@
+package encapsulation;
+
+import heranca.Pessoa;
+
 public class Livro implements Publicaçao {
     private String titulo;
     private String autor;
@@ -7,7 +11,7 @@ public class Livro implements Publicaçao {
     private  int pagAtual;
 
     public String detalhes() {
-        return "Livro{" +
+        return "encapsulation.Livro{" +
                 "\ntitulo='" + titulo + '\'' +
                 "\n, autor='" + autor + '\'' +
                 "\n, TotPaginas=" + TotPaginas +

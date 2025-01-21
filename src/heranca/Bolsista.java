@@ -1,4 +1,6 @@
-public class Bolsista extends HAluno{
+package heranca;
+
+public class Bolsista extends HAluno {
     private float bolsa;
 
     public void renovarBolsa(){
@@ -9,5 +11,6 @@ public class Bolsista extends HAluno{
     public void pagarMensalidade(){
         System.out.println("Pagando Mensalidade do Bolsisita " + this.getNome());
     }
+
 
 }

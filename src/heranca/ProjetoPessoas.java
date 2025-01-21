@@ -1,3 +1,5 @@
+package heranca;
+
 public class ProjetoPessoas {
     private String nome;
     private int idade;
@@ -33,7 +35,7 @@ public class ProjetoPessoas {
 
     @Override
     public String toString() {
-        return "ProjetoPessoas{" +
+        return "heranca.ProjetoPessoas{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", sexo='" + sexo + '\'' +

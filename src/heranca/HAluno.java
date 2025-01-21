@@ -1,4 +1,6 @@
-public class HAluno extends HPessoa{
+package heranca;
+
+public class HAluno extends HPessoa {
     private int matricula;
     private String curso;
     public void pagarMensalidade(){

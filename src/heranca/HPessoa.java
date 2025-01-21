@@ -1,17 +1,12 @@
-public class Pessoa {
+package heranca;
+
+public abstract class HPessoa {
     private String nome;
     private int idade;
     private String sexo;
 
     public void fazerAniversario() {
-        //this.idade++;
-        this.idade = this.idade + 1;
-    }
-
-    public Pessoa(String nome, int idade, String sexo) {
-        this.nome = nome;
-        this.idade = idade;
-        this.sexo = sexo;
+        this.idade++;
     }
 
     public String getNome() {
@@ -38,6 +33,12 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "heranca.HPessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
 }

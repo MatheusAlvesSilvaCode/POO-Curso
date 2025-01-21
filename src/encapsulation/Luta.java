@@ -1,4 +1,5 @@
-import java.util.Objects;
+package encapsulation;
+
 import java.util.Random;
 
 public class Luta {
