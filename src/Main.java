@@ -1,28 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-    ProjetoPessoas p1 = new ProjetoPessoas();
-    Aluno p2 = new Aluno();
-    Professor p3 = new Professor();
-    funcionario p4 = new funcionario();
+      visitante v1 = new visitante();
+      v1.setNome("Vinicius");
+      v1.setIdade(29);
+      v1.setSexo("Masculino");
+        System.out.println(v1.toString());
 
-    p1.setNome("Matheus");
-        p2.setNome("Alves");
-        p3.setNome("Silva");
-        p4.setNome("Carlos");
 
-        p1.setSexo("Masculino");
-        p2.setSexo("Feminino");
+        System.out.println(v1.toString());
 
-        p3.receberaumento(700f);
-
-        p1.FazerAniversario();
-        p2.FazerAniversario();
-        p3.FazerAniversario();
-
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
-        System.out.println(p3.toString());
-        System.out.println(p4.toString());
-
+        Bolsista b1 = new Bolsista();
+        b1.setNome("jubileu");
+        b1.setIdade(2895);
+        b1.setSexo("Masculino");
+        b1.pagarMensalidade();
+        System.out.println(b1.toString());
     }
 }
