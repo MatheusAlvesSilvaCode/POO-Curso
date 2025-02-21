@@ -5,6 +5,7 @@ public class Gafanhoto extends Pessoa {
     private String login;
     private int toAssistindo;
 
+    //Contrutor e os parameteros
     public Gafanhoto(String nome, int idade, String sexo, String login) {
         super(nome, idade, sexo);
         this.login = login;
